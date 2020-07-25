@@ -1,0 +1,47 @@
+.friend {
+  padding: var(--padding-common);
+  border-radius: 8px;
+
+  &.active {
+    background: var(--background-active);
+    color: var(--color-base-white);
+
+    .avatar {
+      background: var(--color-base-white);
+      color: var(--background-grey);
+    }
+
+    .msg {
+      color: var(--color-des-white);
+    }
+
+  }
+
+}
+
+.avatar {
+  margin-right: var(--padding-common);
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--color-base-white);
+  border-radius: 50%;
+  background: var(--background-grey);
+}
+
+.name {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.msg {
+  height: 18px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-des);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

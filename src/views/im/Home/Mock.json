@@ -1,0 +1,34 @@
+{
+  "friends": [
+    {
+      "id": "sfasdfsdfsda",
+      "name": "One Friend",
+      "avatar": "",
+      "latestMessage": "你好"
+    },
+    {
+      "id": "sfassdfgdfsdfsda",
+      "name": "Two Friend",
+      "avatar": "",
+      "latestMessage": "这是最新消息"
+    },
+    {
+      "id": "sdf234fsdfa",
+      "name": "Three Friend",
+      "avatar": "",
+      "latestMessage": "长内容，非常多，非常多内容，很长啊啊啊"
+    },
+    {
+      "id": "34tgsdghdje54w",
+      "name": "Four Friend",
+      "avatar": "",
+      "latestMessage": ""
+    },
+    {
+      "id": "sdgfsnjht4",
+      "name": "Five Friend",
+      "avatar": "",
+      "latestMessage": ""
+    }
+  ]
+}

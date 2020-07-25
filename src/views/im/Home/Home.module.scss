@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  width: 220px;
+  background: var(--background-panel);
+  border-right: var(--border-common);
+}
+
+.right {
+  flex: 1;
+}
