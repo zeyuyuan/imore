@@ -1,0 +1,59 @@
+.message {
+  display: flex;
+
+  & + & {
+    margin-top: var(--padding-common);
+  }
+
+  &.mine {
+    flex-direction: row-reverse;
+    .main {
+      text-align: right;
+    }
+
+    .content {
+      margin-left: 60px;
+      margin-right: 0;
+      background: rgb(10, 96, 255);
+      color: var(--color-base-white);
+    }
+  }
+}
+
+.avatarWrapper {
+  padding: 0 var(--padding-common);
+}
+
+.avatar { // todo avatar component
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--background-grey);
+  color: var(--color-base-white);
+  font-size: 14px;
+}
+
+.name {
+  display: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-des);
+}
+
+.main {
+  flex: 1;
+}
+
+.content {
+  margin-right: 60px;
+  display: inline-block;
+  padding: 5px var(--padding-common);
+  font-size: 14px;
+  line-height: 20px;
+  background: rgb(230, 230, 237);
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: left;
+}

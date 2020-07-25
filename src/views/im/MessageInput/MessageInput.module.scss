@@ -1,0 +1,14 @@
+.inputWrapper {
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 var(--padding-common);
+  font-size: 14px;
+  line-height: 30px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 20px;
+  outline: none;
+  font-family: inherit;
+}

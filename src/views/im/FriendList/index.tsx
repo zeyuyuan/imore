@@ -5,14 +5,14 @@ import FriendItem from "../FriendItem";
 
 type Props = {
   friendList: Friend[];
-  activeFriendId?: string;
-  setActiveFriendId?: (val: string) => void;
+  activeFriend: Friend | null;
+  setActiveFriend?: (friend: Friend | null) => void;
 }
 
-const FriendList: React.FC<Props> = ({friendList, activeFriendId, setActiveFriendId}) => {
+const FriendList: React.FC<Props> = ({friendList, activeFriend, setActiveFriend}) => {
   const friendClickHandler = (item: Friend) => {
-    if (setActiveFriendId) {
-      setActiveFriendId(item.id);
+    if (setActiveFriend) {
+      setActiveFriend(item);
     }
   }
   return (
@@ -24,7 +24,7 @@ const FriendList: React.FC<Props> = ({friendList, activeFriendId, setActiveFrien
             key={friend.id}
             onClick={() => friendClickHandler(friend)}
           >
-            <FriendItem friend={friend} active={friend.id === activeFriendId}/>
+            <FriendItem friend={friend} active={activeFriend ? activeFriend.id === friend.id : false}/>
           </div>
         ))
       }
