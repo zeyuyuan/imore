@@ -1,0 +1,28 @@
+.wrapper {
+  width: 140px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 18px;
+}
+
+.item {
+  display: flex;
+
+  & + & {
+    margin-top: 4px;
+  }
+}
+
+.itemKey {
+  width: 40px;
+}
+
+.itemInput {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 4px;
+  width: 100%;
+  line-height: 18px;
+  height: 18px;
+}
