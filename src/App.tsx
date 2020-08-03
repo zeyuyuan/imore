@@ -6,6 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Translate from "./views/Translate";
+import Login from "./views/login";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <Switch>
         <Route path="/translate">
           <Translate/>
+        </Route>
+        <Route path="/login">
+          <Login/>
         </Route>
         <Route path="/">
           <Home/>

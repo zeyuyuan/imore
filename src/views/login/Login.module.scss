@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  & > * {
+    align-self: center;
+  }
+}
+
+.box {
+  width: 300px;
+  max-width: 100%;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 4px;
+
+  & + & {
+    margin-top: 30px;
+  }
+}
+
+.button {
+  display: block;
+  margin: 30px auto 0;
+  width: 80px;
+  cursor: pointer;
+}
