@@ -1,15 +1,6 @@
-export type TranslateProject = {
+export type TagType = {
   id: string;
   name: string;
-  createTime: number;
-  updateTime: number;
-}
-
-export type LanguageType = {
-  id: string;
-  key: string;
-  name: string;
-  label: string;
-  short: string;
-  editing: boolean; // todo move outside
+  format: string;
+  color: string;
 }

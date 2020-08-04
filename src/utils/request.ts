@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {LocalsFlag} from "../enum";
+import { LocalsFlag } from '../enum'
 
 const request = axios.create({
   baseURL: 'http://localhost:3333',
@@ -11,7 +11,7 @@ request.interceptors.request.use(
   config => {
     const token = localStorage.getItem(LocalsFlag.token)
     if (token) {
-      config.headers['Authorization'] = `Bearer ${token}`
+      config.headers.Authorization = `Bearer ${token}`
     }
     return config
   },

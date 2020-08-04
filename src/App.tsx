@@ -1,14 +1,14 @@
-import React from 'react';
-import Home from "./views/im/Home";
+import React from 'react'
+import Home from './views/im/Home'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-} from 'react-router-dom';
-import Translate from "./views/Translate";
-import Login from "./views/login";
+  Route
+} from 'react-router-dom'
+import Translate from './views/Translate'
+import Login from './views/login'
 
-function App() {
+function App () {
   return (
     <Router>
       <Switch>
@@ -23,7 +23,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
